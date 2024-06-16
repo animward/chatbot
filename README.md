@@ -49,7 +49,11 @@ python run.py
 
 4. **Use Generated Prompts**: Utilize the generated prompts to further enhance the chatbot’s responses or to guide its interactions more effectively.
 
-### Example of Self-Prompt Generation
+### Other Features
+1. **Letter-by-Letter Printing**: Implements a typewriter effect for displaying the chatbot's responses, enhancing the user experience by simulating real-time typing.
+1. **Chat Memory**: Preserves conversation history to maintain context, ensuring more coherent and contextually aware interactions.
+1. **File Reading and Cleaning**: Automates reading and preprocessing of text files, including normalizing whitespace, removing unwanted characters, converting to lowercase, and eliminating duplicate lines.
+1. **Prompt Generation**: Utilizes pre-cleaned data from files to generate contextually relevant prompts, improving the relevance and quality of responses.
 
 ![Self-Prompt Generation Example](images/prompt_generation_example.PNG)
 
