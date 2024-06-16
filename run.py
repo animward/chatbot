@@ -7,4 +7,6 @@ def run_command(command):
     if process.returncode != 0:
         print(f"Error running command: {command}")
         
+run_command("python scripts/clean_text.py")   
+     
 run_command("python scripts/chatbot.py")
