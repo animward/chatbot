@@ -7,7 +7,9 @@ Unlock the full potential of your interactions with our incredibly straightforwa
 ## Key Features
 
 - **Intuitive Fine-Tuning**: Easily customize and adapt the chatbot to suit your unique requirements and preferences.
+
 - **Data Cleaning Mastery**: Automatically cleans and processes input data, ensuring only the highest quality data is utilized.
+
 - **Optimized Output**: Delivers refined and enhanced responses for superior performance and user experience.
 
 ## Getting Started
@@ -51,8 +53,11 @@ python run.py
 
 ### Other Features
 1. **Letter-by-Letter Printing**: Implements a typewriter effect for displaying the chatbot's responses, enhancing the user experience by simulating real-time typing.
+
 1. **Chat Memory**: Preserves conversation history to maintain context, ensuring more coherent and contextually aware interactions.
+
 1. **File Reading and Cleaning**: Automates reading and preprocessing of text files, including normalizing whitespace, removing unwanted characters, converting to lowercase, and eliminating duplicate lines.
+
 1. **Prompt Generation**: Utilizes pre-cleaned data from files to generate contextually relevant prompts, improving the relevance and quality of responses.
 
 ![Self-Prompt Generation Example](images/prompt_generation_example.PNG)
