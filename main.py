@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 import time
+from datetime import datetime
 
 load_dotenv()
 
@@ -13,7 +14,7 @@ conversation_history = []
 bot_name = "R3060"
 
 def get_updated_model():
-    current_date = "2024-05-03" #Y/M/D
+    current_date = datetime.now().strftime("%Y-%m-%d")
 
     deprecated_models = {
         "gpt-3.5-turbo-0613": {
@@ -46,6 +47,7 @@ def chat_with_bot():
 
         # Get updated model
         model = get_updated_model()
+        
         if model is None:
             model = "gpt-3.5-turbo-1106"
 
