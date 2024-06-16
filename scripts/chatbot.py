@@ -59,7 +59,7 @@ def chat_with_bot():
             model = "gpt-3.5-turbo-1106"
 
         # Load data from file
-        with open("data/example_data.txt", "r") as file:
+        with open("data/output/output_cleaned.txt", "r") as file:
             example_data = file.read()
 
         conversation_history.insert(0, {"role": "user", "content": example_data})
