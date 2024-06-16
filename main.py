@@ -28,7 +28,7 @@ def get_updated_model():
         shutdown_date = deprecation_info["shutdown_date"]
         recommended_replacement = deprecation_info["recommended_replacement"]
         if current_date >= shutdown_date:
-            print(f"Returning recommended replacement: {recommended_replacement}")
+           # print(f"Returning recommended replacement: {recommended_replacement}")
             return recommended_replacement
 
     return None
@@ -37,6 +37,13 @@ def chat_with_bot():
     print()
     print("\033[1;32;2m-----R3060-----\033[0m")
     print()
+    
+    # Get the initial model
+    model = get_updated_model()
+
+    # Dynamic introduction based on model
+    bot_intro = f"Initializing With: {model}"
+    print("\033[1m \u001B[32m R3060: ", bot_intro, " \033[0m")
 
     while True:
         user_input = input("\033[34mYou: \033[0m")
